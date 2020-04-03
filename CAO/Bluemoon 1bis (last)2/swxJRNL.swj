@@ -1,0 +1,1922 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 02/15/17 by p1408085
+' *****************************************************************************
+Dim swApp As Object
+
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+
+Sub main()
+
+Set swApp = _
+Application.SldWorks
+
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Dim myModelView As Object
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.32888548092268222, -0.097905798450915002
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.47614763655970405, -0.075312152654550005
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1325359400733197, 0.082843367920005004
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.29943304979527785, 0.15815552057455501
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.1325359400733197, 0.203342812167285
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.009817477042468126, 0.067780937389095006
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.004908738521234063, 0.14309309004364501
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.61359231515425794, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.5105088062083426, -0.045187291592730001
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.32888548092268222, 0.188280381636375
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.024543692606170314, 0
+boolstatus = Part.Extension.SelectByID2("Plan de face", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+boolstatus = Part.DeSelectByID("Plan de face", "PLANE", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Plan de dessus", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+Dim sViewData As Object
+Set sViewData = Part.ModelViewManager.CreateSectionViewData()
+Set sViewData.FirstPlane = Nothing
+sViewData.FirstReverseDirection = True
+sViewData.FirstOffset = 0
+sViewData.FirstRotationX = 0
+sViewData.FirstRotationY = 0
+sViewData.FirstColor = 16711680
+sViewData.ShowSectionCap = True
+sViewData.KeepCapColor = False
+sViewData.GraphicsOnlySection = False
+boolstatus = Part.ModelViewManager.CreateSectionView(sViewData)
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.10308350894591532, 0.24576836591529055, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.044178646691106563, 0.19200653587132074, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.029452431127404376, 0.17664601300161509, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, 0.16128549013190943, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, 0.061442091478822639, 1.0420323463096466, 0.027023107104321653, 2.8345365003521925
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.0076802614348528298, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.024543692606170314, -0.046081568609116975, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.053996123733574694, -0.13824470582735093, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.053996123733574694, -0.14592496726220378, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, -0.12288418295764528, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.0076802614348528298, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.053996123733574694, 0.23040784304558487, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.076802614348528295, 1.1116467759518489, 0.025768759189038093, 2.8448955202529853
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.1090670277244374, 0.02473486090667798, 2.8413229190973892, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.1090670277244374, 0.02473486090667798, 2.8413229190973892, False, 0, Nothing, 0)
+boolstatus = Part.SetComponentTransparent(True)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.014726215563702188, -0.038401307174264147, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, -0.2073670587410264, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.049087385212340628, -0.33793150313352449, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.019634954084936252, -0.2534486273501434, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.3686525488729358, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.009817477042468126, -0.10752366008793961, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.038401307174264147, 1.7339953361894551, 0.026923069222926088, 2.8425710196118885
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.024543692606170314, -0.14592496726220378, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, -0.23808810448043774, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.029452431127404376, -0.13056444439249809, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.0076802614348528298, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.039269908169872504, 0.19200653587132074, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.083448554860979074, 0.34561176456837733, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.044178646691106563, 0.076802614348528295, 1.3243183743008231, 0.033186845795301068, 2.7917614543563642
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.019634954084936252, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.69704087001523696, 0.30721045739411318
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.58904862254808754, 0.099843398653086779
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.063813600776042825, 0.01536052286970566
+boolstatus = Part.Extension.SelectByID2("Plan de dessus", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+Set sViewData = Part.ModelViewManager.CreateSectionViewData()
+Set sViewData.FirstPlane = Nothing
+sViewData.FirstReverseDirection = True
+sViewData.FirstOffset = 0
+sViewData.FirstRotationX = 0
+sViewData.FirstRotationY = 0
+sViewData.FirstColor = 16711680
+sViewData.ShowSectionCap = True
+sViewData.KeepCapColor = False
+sViewData.GraphicsOnlySection = False
+boolstatus = Part.ModelViewManager.CreateSectionView(sViewData)
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004908738521234063, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.33870295796515032, -0.29184993452440755
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.28961557275280969, -0.17664601300161509
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.019634954084936252, -0.01536052286970566
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.15217089415825596, 0.076802614348528295
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.063813600776042825, 0.23040784304558487
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.093266031903447191, 0.11520392152279244
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.19634954084936251, 0.038401307174264147
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.15217089415825596, 0.046081568609116975
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.15217089415825596, 0.023040784304558488
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.14726215563702189, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.098174770424681257, 0.023040784304558488
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.7028238410257306, 0.011214869240875558, 2.8432610812145542, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.7028238410257306, 0.011214869240875558, 2.8432610812145542, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.062312072589975287, 0.032795139978986754, -0.018493276987953777, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.019634954084936252, -0.023040784304558488
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.58413988402685357, -0.26880915021984902
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.36324665057132066, -0.2073670587410264
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.27979809571034159, -0.038401307174264147
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.47123889803847002, -0.092163137218233951
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.014726215563702188, -0.0076802614348528298
+boolstatus = Part.Extension.SelectByID2("D5@Esquisse1@Propulseur.SLDPRT", "DIMENSION", 0.3272668509818496, 0.051099515176562374, -0.050891187889581524, False, 0, Nothing, 0)
+Dim myDimension As Object
+Set myDimension = Part.Parameter("D5@Esquisse1")
+myDimension.SystemValue = 0.4875
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "Propulseur.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.0076802614348528298, 1.7089240397446264, 0.034292765313066909, 2.8317681517036926
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.039269908169872504, -0.26112888878499618, 1.7089240397446264, 0.034292765313066909, 2.8317681517036926
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6825215899467312, 0.014106352012692724, 2.8454712593360574, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 1.6831147829996753, 1.2367609764751819e-005, 2.8597136294072438, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6825254917726382, 0.0091452336841104653, 2.8416224918111768, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6825254917726382, 0.0091452336841104653, 2.8416224918111768, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6879711850427848, 0.035032220599942931, 2.8341420364789549, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6879711850427848, 0.035032220599942931, 2.8341420364789549, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.6963432648408585, 0.0031784635996707777, 2.8401954575566108, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.18788287543509341, 0.025876503927179328, 0.027348291436624095, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D5@Esquisse1@Propulseur.SLDPRT", "DIMENSION", 0.30890815640499791, 0.068093122538055717, -0.041704003956805624, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D5@Esquisse1")
+myDimension.SystemValue = 0.4855
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "Propulseur.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, 0, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.024543692606170314, 0.12288418295764528, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.049087385212340628, 0.19968679730617356, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.073631077818510943, 0.29953019595926034, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.019634954084936252, 0.084482875783381123, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.061442091478822639, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.024543692606170314, 0.0076802614348528298, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.35833791205008658, -0.0076802614348528298, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.28470683423157567, 0, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, 0, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.7314020396638754, -0.0076802614348528298, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.063813600776042825, -0.01536052286970566, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.078539816339745008, -0.069122352913675467, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, -0.17664601300161509, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.063813600776042825, -0.28416967308955471, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.049087385212340628, -0.23040784304558487, 1.6968485739432253, 0.037589081024506754, 2.8270043967782854
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1822949457602063, 0.0019603605564348925, 2.8585072245571874, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1822949457602063, 0.0019603605564348925, 2.8585072245571874, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\bride de maintien.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "bride de maintien.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Boss.-Extru.1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D7@Esquisse1@bride de maintien.SLDPRT", "DIMENSION", -0.060185727672893714, 0.0296169701373463, -0.092669053742074098, False, 0, Nothing, 0)
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "bride de maintien.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, 0.0076802614348528298, 1.7041612533102204, 0.016519555920972095, 2.8337497087786749
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, 0.22272758161073206, 1.7041612533102204, 0.016519555920972095, 2.8337497087786749
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.15360522869705659, 1.7041612533102204, 0.016519555920972095, 2.8337497087786749
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.0076802614348528298, 1.7041612533102204, 0.016519555920972095, 2.8337497087786749
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.0076802614348528298, 1.7041612533102204, 0.016519555920972095, 2.8337497087786749
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.7048753716409681, 0.016564138174318899, 2.8428055695874477, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.11385787191724717, -0.0078188372318095389, 0.03682917707925526, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D5@Esquisse1@Propulseur.SLDPRT", "DIMENSION", 0.30496353423649503, 0.065990761173130311, -0.040366283917993573, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D5@Esquisse1")
+myDimension.SystemValue = 0.4875
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "Propulseur.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.01536052286970566, 1.7216819996643045, 0.031247242377643758, 2.8376374901054824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.044178646691106563, -0.069122352913675467, 1.7216819996643045, 0.031247242377643758, 2.8376374901054824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.034361169648638439, -0.14592496726220378, 1.7216819996643045, 0.031247242377643758, 2.8376374901054824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, -0.01536052286970566, 1.7216819996643045, 0.031247242377643758, 2.8376374901054824
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.014726215563702188, -0.069122352913675467, 2.1804200947149392, 0.038260549935156263, 2.8262946560660289
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.10308350894591532, -0.59906039191852067, 2.1804200947149392, 0.038260549935156263, 2.8262946560660289
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.053996123733574694, -0.33793150313352449, 2.1804200947149392, 0.038260549935156263, 2.8262946560660289
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1923625228623695, 0.0038252600312986829, 2.8557267362635081, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.1903923942088994, 0.015530049460295459, 2.8534108421446867, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1923625228623695, 0.0038252600312986829, 2.8557267362635081, False, 1, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.1903923942088994, 0.015530049460295459, 2.8534108421446867, True, 2, Nothing, 0)
+Dim myFeature As Object
+Set myFeature = Part.FeatureManager.FeatureCircularPattern3(2, 3.1415926535898002, False, "NULL", False, True, False)
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.024543692606170314, -0.099843398653086779, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.024543692606170314, -0.22272758161073206, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.014726215563702188, -0.16896575156676225, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.084482875783381123, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.023040784304558488, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, 0.076802614348528295, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.16896575156676225, 2.1733568511537413, 0.011466791042956004, 2.8613116880665976
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1923650910293766, 0.0030482881076778767, 2.8531934920829682, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1923650910293766, 0.0030482881076778767, 2.8531934920829682, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.046081568609116975, 1.9874553519981859, 0.032509571783487345, 2.8359235388154209
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.044178646691106563, 0.22272758161073206, 1.9874553519981859, 0.032509571783487345, 2.8359235388154209
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.046081568609116975, 1.9874553519981859, 0.032509571783487345, 2.8359235388154209
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, -0.0076802614348528298, 2.1251143493893867, 0.014896411677522536, 2.8552704389683305
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.078539816339745008, 0.24576836591529055, 2.1251143493893867, 0.014896411677522536, 2.8552704389683305
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.061442091478822639, 2.1251143493893867, 0.014896411677522536, 2.8552704389683305
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, 0.0076802614348528298, 2.1251143493893867, 0.014896411677522536, 2.8552704389683305
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.039269908169872504, -0.0076802614348528298, 2.1251143493893867, 0.014896411677522536, 2.8552704389683305
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1694616427156408, 0.0040728446488706993, 2.864944170939701, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Révolution1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D1@Esquisse1@Bague maintient bas.SLDPRT", "DIMENSION", 0.045674832729869219, 0.0033547741828880151, -0.067126644261625873, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D1@Esquisse1")
+myDimension.SystemValue = 0.098
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, -0.030721045739411319, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, -0.23808810448043774, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, -0.13056444439249809, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, -0.038401307174264147, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.024543692606170314, 0.061442091478822639, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.049087385212340628, 0.21504732017587921, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.029452431127404376, 0.084482875783381123, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.029452431127404376, 0.15360522869705659, 2.1763325334494148, 0.00092283412876703608, 2.859849596361685
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.174329526639557, 0.011235652078546821, 2.8628145047884099, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Trou taraudé M41", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.069122352913675467
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.049087385212340628, 0.22272758161073206
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.093266031903447191, 0.23040784304558487
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.058904862254808753, 0.31489071882896602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.019634954084936252, 0.1843262744364679
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.014726215563702188, 0.13056444439249809
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.16896575156676225
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.069122352913675467
+boolstatus = Part.Extension.SelectByID2("D1@Esquisse4@Bague maintient bas.SLDPRT", "DIMENSION", 0.055872927635151656, -0.017525048480154848, -0.020862906954706523, True, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D1@Esquisse4")
+myDimension.SystemValue = 0.046
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.0076802614348528298, 2.1791854007569196, 0.0036763873951066728, 2.8575824981547804
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.078539816339745008, 0.15360522869705659, 2.1791854007569196, 0.0036763873951066728, 2.8575824981547804
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.044178646691106563, 0.14592496726220378, 2.1791854007569196, 0.0036763873951066728, 2.8575824981547804
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.019634954084936252, 0.053761830043969804, 2.1791854007569196, 0.0036763873951066728, 2.8575824981547804
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1742387070611811, 0, 2.8655457067350643, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.1743292732313755, 5.6099347212068551e-007, 2.865160570955354, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1743362907185277, 0.0017860433095648887, 2.8561424061103007, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Trou taraudé M41", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1763325891935414, 0.0035788710867787898, 2.8597946102612353, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\bride de maintien.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "bride de maintien.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Boss.-Extru.1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D3@Esquisse1@bride de maintien.SLDPRT", "DIMENSION", -0.03489893536488204, -0.023212387288376553, -0.098956029043539145, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D3@Esquisse1")
+myDimension.SystemValue = 0.098
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Part.ViewZoomtofit2
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0, 2.1540065050675459, 0.022783479606863111, 2.8470755126409202
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.34561176456837733, 2.1540065050675459, 0.022783479606863111, 2.8470755126409202
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, -0.23808810448043774, 2.1540065050675459, 0.022783479606863111, 2.8470755126409202
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.0076802614348528298, 2.1540065050675459, 0.022783479606863111, 2.8470755126409202
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1743322882204072, 0.0070918120807661467, 2.8600904768689088, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.176333035177235, 0.0027984713835564889, 2.8593546912080789, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\bride de maintien.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "bride de maintien.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", -0.0020000000000095497, 0.03465009682244613, 0.0012011002093572642, False, 0, Nothing, 0)
+Part.FeatEdit
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("D3@Esquisse1@bride de maintien.SLDPRT", "DIMENSION", -0.035654287516473156, -0.022770216819098167, -0.098580158480333607, False, 0, Nothing, 0)
+Set myDimension = Part.Parameter("D3@Esquisse1")
+myDimension.SystemValue = 0.097
+Part.ClearSelection2 True
+Part.SketchManager.InsertSketch True
+Set Part = Nothing
+swApp.CloseDoc "bride de maintien.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "socket head cap screw_iso.sldprt", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+Set Part = Nothing
+swApp.CloseDoc "socket head cap screw_iso.sldprt"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.0076802614348528298, 2.1640344771740612, 0.0072811408450110804, 2.8579260683717491
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.044178646691106563, 0.38401307174264149, 2.1640344771740612, 0.0072811408450110804, 2.8579260683717491
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, 0.023040784304558488, 2.1640344771740612, 0.0072811408450110804, 2.8579260683717491
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1675267720267231, 0.00049788730199473719, 2.8636884019725453, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1681975330170786, 0, 2.8640200275549224, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.1687339405588322, 1.9546026663874727e-007, 2.8637433700976715, False, 0, Nothing, 0)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "socket head cap screw_iso.sldprt", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ShowConfiguration2("PreviewCfg")
+boolstatus = Part.ShowConfiguration2("ISO 4762 M4 x 6 - 6N")
+boolstatus = Part.DeleteConfiguration2("Default")
+boolstatus = Part.DeleteConfiguration2("PreviewCfg")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M12 x 110 - 36N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M16 x 50 - 50C")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M6 x 16 - 16C")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M6 x 20 - 20N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M6 x 10 - 10S")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M4 x 12 - 12N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 45 - 32N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 25 - 25N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M8 x 25 - 25N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 35 - 35N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 100 - 32N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 55 - 32N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 60 - 32N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M10 x 90 - 90N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M8 x 50 - 50N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M5 x 50 - 22N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M5 x 30 - 22N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M5 x 20 - 20N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M5 x 8 - 8N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M8 x 12 - 12N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M6 x 10 - 10N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M8 x 40 - 28N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M3 x 10 - 10N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M3 x 6 - 6N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M3 x 8 - 8N")
+boolstatus = Part.DeleteConfiguration2("ISO 4762 M8 x 35 - 35N")
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "ISO 4762 M4 x 6 - 6N.sldprt", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.OpenDoc6("C:\SOLIDWORKS Data\CopiedParts\ISO 4762 M4 x 6 - 6N.sldprt", 1, 0, "", longstatus, longwarnings)
+Set Part = Nothing
+swApp.CloseDoc "socket head cap screw_iso.sldprt"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "ISO 4762 M4 x 6 - 6N.sldprt", False, longstatus
+Set Part = swApp.ActiveDoc
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\ISO 4762 M4 x 6 - 6Nsz.sldprt", 0, 2)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.AddComponent("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\ISO 4762 M4 x 6 - 6N.sldprt", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1743107278725615, 0, 2.8167381204643824, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1734091343179633, 0.0019647616847091598, 2.8167474725014512, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1766105110205221, 0, 2.8206810928107315, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("ISO 4762 M4 x 6 - 6N-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0, 2.172033462046465, 0.037086960441284234, 2.8300391971971375
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.044178646691106563, -0.61442091478822636, 2.172033462046465, 0.037086960441284234, 2.8300391971971375
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, -0.36097228743808302, 2.172033462046465, 0.037086960441284234, 2.8300391971971375
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.014726215563702188, -0.39937359461234712, 2.172033462046465, 0.037086960441284234, 2.8300391971971375
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.024543692606170314, -0.17664601300161509, 2.172033462046465, 0.037086960441284234, 2.8300391971971375
+boolstatus = Part.Extension.SelectByID2("ISO 4762 M4 x 6 - 6N-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("ISO 4762 M4 x 6 - 6N-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.030721045739411319, 2.1928179296702801, 0.036050932562028848, 2.8321114887354217
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.9984339865308679, 2.1928179296702801, 0.036050932562028848, 2.8321114887354217
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.039269908169872504, 0.52993803900484526, 2.1928179296702801, 0.036050932562028848, 2.8321114887354217
+boolstatus = Part.AddComponent("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\ISO 4762 M4 x 6 - 6N.sldprt", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1817788256130646, 9.8666860187890393e-005, 2.8706782196024916, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1817788256130646, 9.8666860187890393e-005, 2.8706782196024916, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Répétition circulaire locale18", "COMPPATTERN", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Répétition circulaire locale18", "COMPPATTERN", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("bride de maintien-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.193875429988756, 0, 2.8234381566922964, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("ISO 4762 M4 x 6 - 6N-2@FUSEE 1BIS 2", "COMPONENT", 2.1828274637508827, 0.0011348144870861887, 2.8707465572017123, True, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.01536052286970566, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.029452431127404376, -0.76034588205043008, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, -0.32257098026381886, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.099843398653086779, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.0076802614348528298, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, 0.26112888878499618, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, 0.43777490178661127, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, 0.19200653587132074, 2.1978341179953818, 0.010339853396237331, 2.8247343164223602
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.009817477042468126, 0.0076802614348528298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.034361169648638439, 0.15360522869705659
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.29452431127404377, 0.27648941165470187
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.3337942194439163, 0.084482875783381123
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.27488935718910751, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.049087385212340628, 0.0076802614348528298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.11290098598838345, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.31415926535898003, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.15707963267949002, -0.061442091478822639
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.024543692606170314, -0.56833934617910942
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.22089323345553283, -0.27648941165470187
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.20125827937059657, -0.0076802614348528298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.10799224746714939, 0.099843398653086779
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.078539816339745008, 0.28416967308955471
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.009817477042468126, 0.030721045739411319
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.004908738521234063, 0.0076802614348528298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.034361169648638439, 0.023040784304558488
+boolstatus = Part.Extension.SelectByID2("Plan de dessus", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+Set sViewData = Part.ModelViewManager.CreateSectionViewData()
+Set sViewData.FirstPlane = Nothing
+sViewData.FirstReverseDirection = True
+sViewData.FirstOffset = 0
+sViewData.FirstRotationX = 0
+sViewData.FirstRotationY = 0
+sViewData.FirstColor = 16711680
+sViewData.ShowSectionCap = True
+sViewData.KeepCapColor = False
+sViewData.GraphicsOnlySection = False
+boolstatus = Part.ModelViewManager.CreateSectionView(sViewData)
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.019634954084936252, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.3436116964863844, 0.092163137218233951
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.32888548092268222, 0.21504732017587921
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.029452431127404376, 0.046081568609116975
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.10308350894591532, 0.14592496726220378
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.23561944901923501, 0.23808810448043774
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0.024543692606170314, 0.030721045739411319
+boolstatus = Part.Extension.SelectByID2("", "FACE", 1.7063430949749794, 0.012472587096707954, 2.8550863575105527, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+Set Part = swApp.NewDocument("C:\ProgramData\SolidWorks\SolidWorks 2013\lang\french\sheetformat\a4 - iso.slddrt", 12, 0.29699999999999999, 0.20999999999999999)
+Set Part = Nothing
+swApp.CloseDoc "ISO 4762 M4 x 6 - 6Nsz.sldprt"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Dim myView As Object
+Set myView = Part.CreateDrawViewFromModelView3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", "*Face", 0.080313387660069846, 0.22767349243306162, 0)
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.SetupSheet5("Feuille1", 12, 12, 1, 3, True, "C:\ProgramData\SolidWorks\SolidWorks 2013\lang\french\sheetformat\a4 - iso.slddrt", 0.20999999999999999, 0.29699999999999999, "Par défaut", False)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0.1612153962181706, 0.21223892217730794, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Dim skSegment As Object
+Set skSegment = Part.SketchManager.CreateCircle(-0.239871, 0.000000, 0.000000, -0.202019, 0.047872, 0.000000)
+Set myView = Part.CreateDetailViewAt3(0.22235165902199319, 0.25333352932701969, 0, 0, 2, 3, "A", 1, False)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0.094727201919337534, 0.17659948226332292, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.12068020453151093, 0.20792207162284254, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0.081601545425824568, 0.22045110736665041, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0.11441568665960702, 0.15959579089672657, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0.078320131302446305, 0.17451130963935496, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+Set skSegment = Part.SketchManager.CreateCircle(0.257727, 0.000000, 0.000000, 0.286365, 0.031591, 0.000000)
+Set myView = Part.CreateDetailViewAt3(0.0011227282230464875, 0.16138565314584197, 0, 0, 2, 3, "B", 1, False)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Cercle de détail2", "DETAILCIRCLE", 0.20898007548787098, 0.23387507423501594, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Cercle de détail2", "DETAILCIRCLE", 0.21405135186036464, 0.23566493648413134, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.033871885449413719, 0.2452108684724307, -999.97587620616378, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.19169869986849156, 0.24436195929774976, -999.97078350217566, True, 0, Nothing, 0)
+Dim myDisplayDim As Object
+Set myDisplayDim = Part.AddDimension2(0.15596885990174178, 0.25214184381362159, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan11", "DIMENSION", 0.16039401210737855, 0.25524176472913673, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.19648271797645242, 0.24496484848129185, -999.97252307095096, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.03307227681467953, 0.24718943655582692, -1000, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.11059275024785645, 0.26236273256293596, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.SetPickMode
+Part.ClearSelection2 True
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.19778798401465619, 0.1939191619717921, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.1962973198472498, 0.24802622342941563, -999.98762118306308, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.1962973198472498, 0.24802622342941563, -999.98762118306308)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.12268802686621946, 0.23381862160267175, -999.96272073907699, False, 0, Nothing, 0)
+Dim myCenterLine As Object
+Set myCenterLine = Part.InsertCenterLine2()
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.17129823051170714, 0.18372299279830809, -249.97936580923238, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.1796127348741291, 0.18308341553966026, -249.97788352444877, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.18648819040459344, 0.18995887107187018, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan13", "DIMENSION", 0.18600850746060754, 0.19251718010646154, 0, False, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.17689453152487578, 0.18772035066485698, -250, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.17865336898615736, 0.13479533251174788, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.19384332887904362, 0.16117789443271718, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.040605407688107595, 0.172592386053427, -249.98800950195414, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.052483688827644759, 0.17179384614488682, -249.96703825273858, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.047293179422132722, 0.18866300171454647, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.04040577271097251, 0.16300990715094332, -249.97775922403844, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.022837894723085606, 0.16440735199088877, -249.99242148230121, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.031422198739893978, 0.17189366363519989, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.036849376677395518, 0.16731274167819499, -250, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.039217105916701273, 0.15158425458852101, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.069490215476396319, 0.1593639363765571, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM><DIM", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM><DI", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM><D", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM><", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>2", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>22", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>22, "", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>22, 8", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>22, 80", "", False, "", "", False)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.050379258044857003, 0.17593804104995167, -250, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.049871887493577197, 0.14363544928513741, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.077608144296873224, 0.1593639363765571, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.034717337971510942, 0.15966849400439301, -249.98860500193086, False, 0, Nothing, 0)
+Set myCenterLine = Part.InsertCenterLine2()
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.16833195201350415, 0.15581085422890253, -249.96329038084673, False, 0, Nothing, 0)
+Set myCenterLine = Part.InsertCenterLine2()
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.1811768809397869, 0.17752075267284198, -250, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.18103800134864953, 0.14543956712010817, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.18700982376755668, 0.15918864664445415, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan13", "DIMENSION", 0.1914539706839527, 0.15849424868876727, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.12548616489369918, 0.18099274245302213, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.16526105758809784, 0.19477970832808464, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan13", "DIMENSION", 0.16497307686791535, 0.19823547697027419, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.1453903878955079, 0.1996753805711865, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.10305722202868593, 0.20485903353447082, 0, False, 0, Nothing, 0)
+Set myView = Part.CreateDrawViewFromModelView3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Propulseur.SLDPRT", "*Trimétrique", 0.15551849448008254, 0.079540446762102812, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan14")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.10542813211718394, 0.09065290475264795, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.17884827256630362, 0.17433246300038607, -250, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.18672184304737421, 0.18901261367818878, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.071788412761376208, 0.18568941155124416, -250.00000000000011, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.068991036874547829, 0.133937957644919, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.10093412893330167, 0.15943106256227396, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("RD3@Vue de mise en plan12", "DIMENSION", 0.06619237293970176, 0.15759511610732763, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan12", "DIMENSION", 0.075230878564052958, 0.15858370265999103, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.065768692988560293, 0.18513431292977692, -250.00000000000011, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.064638879785516398, 0.13457517209530817, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Part.EditUndo2 1
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.070711625751877352, 0.18499308627939645, -250.00000000000011, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.070852852402257846, 0.13429271879280144, -250, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.10502970179433581, 0.15978761632769856, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.10953185559965449, 0.2224273769843465, -1000, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.11058295953076973, 0.24817942329666975, -1000, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.10348800799574188, 0.21244188964573474, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\Mises en Plans\Propulseur pro75-3G.SLDDRW", 0, 2)
+boolstatus = Part.Extension.SelectByID2("RD6@Vue de mise en plan12", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD5@Vue de mise en plan12", "DIMENSION", 0, 0, 0, True, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("-0.612814", "0.702351", "0.000000", "-0.410768", "0.425764", "0.000000")
+Part.EditDelete
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023179957343463026, 0.15235724120274302, -250, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("", "SILHOUETTE", 0.023179957343463026, 0.15235724120274302, -250)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.022978066337934047, 0.15243325655536552, -250, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023182395205613333, 0.16707682540571428, -250, True, 0, Nothing, 0)
+' MSGBOX
+' Ne peut pas créer de chanfrein avec l'arête sélectionnée.
+' Veuillez sélectionner une autre arête.
+
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023205724399682916, 0.1522639622709642, -250.00000000000011, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023753961290146345, 0.15206659699039737, -250, True, 0, Nothing, 0)
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023027264081457312, 0.1523557537928292, -250, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.04097998894315525, 0.14406148577161923, -249.99999999999977, True, 0, Nothing, 0)
+' MSGBOX
+' Ne peut pas créer de chanfrein avec l'arête sélectionnée.
+' Veuillez sélectionner une autre arête.
+
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.023190966739770662, 0.15230118624005809, -250.00000000000011, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.024827993322904217, 0.15191921337066025, -250, True, 0, Nothing, 0)
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Dim myDim As Object
+Set myDim = Part.AddChamferDim(0.024391452900735265, 0.13898670336565094, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.040925421390384131, 0.14411605332439034, -249.99999999999977, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.042617015526288805, 0.1437340804549925, -250, True, 0, Nothing, 0)
+Set myDim = Part.AddChamferDim(0.040925421390384131, 0.13527610977721488, 0)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\Mises en Plans\Propulseur pro75-3G.PDF", 0, 0)
+Set Part = Nothing
+swApp.CloseDoc "Propulseur pro75-3G - Feuille1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Propulseur.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = Nothing
+swApp.CloseDoc "Propulseur.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("ogive 2 -4@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("ogive 2 -4@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.EditRebuild3()
+Part.ViewZoomtofit2
+Part.ViewZoomTo2 -4.4354302763901252, -0.42586108134864742, -3.7607399940034685, -4.3253471554038683, -0.67551387358533788, -3.7607399940034667
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ShowNamedView2 "*Dessous", 6
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("FUSEE 1BIS 2.SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("FUSEE 1BIS 2.SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas - Feuille1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Sol 1 Porte Capteurs-1@FUSEE 1BIS 2/+®crou m3-3@Sol 1 Porte Capteurs", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("FUSEE 1BIS 2.SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("FUSEE 1BIS 2.SLDASM", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("ogive 2 -4@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("tube haut-2@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "FUSEE 1BIS 2.SLDASM"
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\FUSEE 1BIS 2.SLDASM", 2, 0, "", longstatus, longwarnings)
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+boolstatus = Part.ShowConfiguration2("ISO 4762 M4 x 6 - 6N")
+boolstatus = Part.Extension.SelectByID2("Plan de face", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+boolstatus = Part.DeSelectByID("Plan de face", "PLANE", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Plan de face", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+boolstatus = Part.DeSelectByID("Plan de face", "PLANE", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Plan de dessus", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+Set sViewData = Part.ModelViewManager.CreateSectionViewData()
+Set sViewData.FirstPlane = Nothing
+sViewData.FirstReverseDirection = True
+sViewData.FirstOffset = 0
+sViewData.FirstRotationX = 0
+sViewData.FirstRotationY = 0
+sViewData.FirstColor = 16711680
+sViewData.ShowSectionCap = True
+sViewData.KeepCapColor = False
+sViewData.GraphicsOnlySection = False
+boolstatus = Part.ModelViewManager.CreateSectionView(sViewData)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1768305219651216, 0.018371137783626423, 2.8677268882652438, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1768305219651216, 0.018371137783626423, 2.8677268882652438, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Trou taraudé M41", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Trou taraudé M41", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+' MSGBOX
+' Enregistrer les changements dans Bague maintient bas.SLDPRT?
+
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("RD3@Vue de mise en plan15", "DIMENSION", 0.14539203891039765, 0.1867028544710406, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.15203256188158418, 0.17996486364483, 0.024000000000000909, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.15333515364070338, 0.17667737015752913, 0.024000000000000909, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.15333515364070338, 0.17667737015752913, 0.024000000000000909)
+boolstatus = Part.DeSelectByID("", "EDGE", 0.15203256188158418, 0.17996486364483, 0.024000000000000909)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.15203256188158418, 0.17996486364483, 0.024000000000000909, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.15543668984785966, 0.15837806375747812, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-1@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.15541309763739355, 0.18036804681185822, 500, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-1@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.15547512581639922, 0.17642925744499777, 500, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.15014070242191102, 0.18489610387578112, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0.11414256587028924, 0.18731605853225836, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.13590608686294964, 0.18043494527722603, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("RD12@Vue de mise en plan15", "DIMENSION", 0.14854813214545087, 0.18283533362200474, 0, False, 0, Nothing, 0)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "2", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "2x", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "2x ", "", True, "", "", False)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 0
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = Nothing
+swApp.CloseDoc "FUSEE 1BIS 2.SLDASM"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.007531215265455, 2.197838405333715, 0.01958543892678577, 2.8205236602050716
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.044178646691106563, -0.22593645796365, 2.197838405333715, 0.01958543892678577, 2.8205236602050716
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.090374583185460003, 2.197838405333715, 0.01958543892678577, 2.8205236602050716
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1768385831456474, -0.012686024813408636, 2.8597753264658179, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Répétition circulaire1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Répétition circulaire1", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0, 0, 0, True, 0, Nothing, 0)
+Part.ActivateSelectedFeature
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.Extension.SelectByID2("Bague maintient bas-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("bride de maintien-1@FUSEE 1BIS 2", "COMPONENT", 0, 0, 0, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, -0.053761830043969804, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.034361169648638439, -0.38401307174264149, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.009817477042468126, -0.26880915021984902, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, -0.14592496726220378, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, 0, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.063813600776042825, 0.32257098026381886, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.063813600776042825, 0.44545516322146411, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.049087385212340628, 0.26112888878499618, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, 0.15360522869705659, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.01536052286970566, 2.1637524060190039, -0.048889769464446786, 2.8266925008621273
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Plan de face", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+boolstatus = Part.DeSelectByID("Plan de face", "PLANE", 0, 0, 0)
+boolstatus = Part.Extension.SelectByID2("Plan de dessus", "PLANE", 0, 0, 0, True, 1, Nothing, 0)
+Set sViewData = Part.ModelViewManager.CreateSectionViewData()
+Set sViewData.FirstPlane = Nothing
+sViewData.FirstReverseDirection = True
+sViewData.FirstOffset = 0
+sViewData.FirstRotationX = 0
+sViewData.FirstRotationY = 0
+sViewData.FirstColor = 16711680
+sViewData.ShowSectionCap = True
+sViewData.KeepCapColor = False
+sViewData.GraphicsOnlySection = False
+boolstatus = Part.ModelViewManager.CreateSectionView(sViewData)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Coaxiale37", "MATE", 0, 0, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1828278360247504, 0.0022047018261464046, 2.8703793456429176, False, 0, Nothing, 0)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1828278360247504, 0.0022047018261464046, 2.8703793456429176, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.0076802614348528298, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.3436116964863844, 0.061442091478822639, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.23561944901923501, 0.27648941165470187, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.078539816339745008, 0.23808810448043774, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.078539816339745008, 0.26112888878499618, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, 0, 2.1635760251510625, -0.002403910146311361, 2.869643540424248
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1657174418812009, 0.0014075099524468726, 2.8678817531643421, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1647800116755285, -0.0038046902454187403, 2.8707046859776657, True, 0, Nothing, 0)
+Dim myMate As Object
+Set myMate = Part.AddMate5(1, 0, False, 0.002501782710430619, 0.001, 0.001, 0.001, 0.001, 0.52359877559830004, 0.52359877559830004, 0.52359877559830004, False, False, 0, longstatus)
+Part.ClearSelection2 True
+Part.EditRebuild3
+
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.014726215563702188, -0.046081568609116975, 2.1372194603690167, 0.037512290498707301, 2.8269311251586906
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.30925052683774595, -0.16896575156676225, 2.1372194603690167, 0.037512290498707301, 2.8269311251586906
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.1325359400733197, -0.099843398653086779, 2.1372194603690167, 0.037512290498707301, 2.8269311251586906
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.039269908169872504, -0.23040784304558487, 2.1372194603690167, 0.037512290498707301, 2.8269311251586906
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.009817477042468126, -0.053761830043969804, 2.1372194603690167, 0.037512290498707301, 2.8269311251586906
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.009817477042468126, -0.0076802614348528298, 2.1667558237838072, 0.0013622656120588772, 2.867577747328939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.37797286613502284, -0.17664601300161509, 2.1667558237838072, 0.0013622656120588772, 2.867577747328939
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.063813600776042825, -0.023040784304558488, 2.1667558237838072, 0.0013622656120588772, 2.867577747328939
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1650038027532341, 0.0079736659906242124, 2.8720889652578787, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Bague maintient bas.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Trou taraudé M41", "BODYFEATURE", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.083448554860979074, -0.48385647039572821, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.009817477042468126, -0.030721045739411319, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.019634954084936252, -0.069122352913675467, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.16198837120072407, 0.28416967308955471, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.14726215563702189, 0.2534486273501434, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.22580197197676691, 0.19200653587132074, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, 0, 2.1596110180815451, 0.037520506151352606, 2.8268565513225816
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Bague maintient bas - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.14262428472122674, 0.17252755279594814, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.142624", "0.172528", "0.000000", "0.157199", "0.158378", "0.000000")
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("RD10@Vue de mise en plan15", "DIMENSION", 0.15550059230851268, 0.169273101427733, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("RD3@Vue de mise en plan15", "DIMENSION", 0.15691557116425842, 0.17054658239790416, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Ligne de coupe1", "SECTIONLINE", 0.073121789567962336, 0.26670480767404448, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan15")
+boolstatus = Part.Extension.SelectByID2("RD5@Vue de mise en plan15", "DIMENSION", 0.16683407384132587, 0.291444608574148, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-20@Vue de mise en plan17", "CTHREAD", 0.094351105071380628, 0.10112116288395442, 500, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.10340528723911714, 0.10137672447390711, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan17", "DRAWINGVIEW", 0.099411250624906577, 0.12292393231761689, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+
+Dim excludedComponents As Variant
+Set myView = Part.CreateSectionViewAt6(0.071163849776287397, 0.079695887018688877, 0, "C", 0, (excludedComponents), 0, True)
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.12448675454781141, 0.13412946550832633, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan17", "DIMENSION", 0.07282635239433316, 0.15553363589139996, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan17", "DIMENSION", 0.041345225799146151, 0.12677310048345136, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan17", "DIMENSION", 0.075028735736383273, 0.12197967791545991, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.Extension.SelectByID2("RD3@Vue de mise en plan17", "DIMENSION", 0.10093912799579645, 0.12677310048345136, 0, False, 0, Nothing, 0)
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.048743399625704328, 0.12717104869357385, -499.99299142002133, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "VERTEX", 0.093682189209952471, 0.12716707592823204, -499.99299142002133, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.067490208165986665, 0.13092193613516132, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-2@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.094257289907486858, 0.075242269295840866, 500, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.094085170339907973, 0.07224738881298548, -499.97700996563424, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.10713183356238737, 0.073142410567887006, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.094119594253423755, 0.075620932337531616, -499.97696674152064, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.094257289907486858, 0.072212964899469712, -499.97673757286975, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.11166384977628739, 0.073934160578749866, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan18", "DIMENSION", 0.10465331178925144, 0.073589921443592096, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan18", "DIMENSION", 0.10871533358411312, 0.074312823627423405, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-2@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.092604942058729572, 0.0723850844740314, 500, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.11166384977628739, 0.063259775825166037, 0)
+Part.ClearSelection2 True
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-2@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.094677429885208109, 0.073025327892755912, 500, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Filetage de perçage1@Bague maintient bas-SectionAssembly-2-2@/Bague maintient bas-1@Bague maintient bas-SectionAssembly-2", "CTHREAD", 0.092645992372398345, 0.072556534620569046, 500, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.088641716505802173, 0.06689194924481956, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("RD3@Vue de mise en plan18", "DIMENSION", 0.10986977597196898, 0.06321221896055837, 0, False, 0, Nothing, 0)
+Part.EditDelete
+Part.SetPickMode
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan18", "DIMENSION", 0.089504496145088805, 0.06880173490349685, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan18", "DIMENSION", 0.10170422224663278, 0.074002414954752654, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.10870326829692095, 0.081827737274866516, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan18", "DIMENSION", 0.10894629072922263, 0.074780086738118007, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.1079255965135556, 0.086882603866741306, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("RD1@Vue de mise en plan18", "DIMENSION", 0.099395208789667469, 0.079187049998465348, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan18", "DIMENSION", 0.10816769326341109, 0.079650385446022237, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.10520234639904705, 0.082801066489409034, 0, False, 0, Nothing, 0)
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan18", "DRAWINGVIEW", 0.089028471674173368, 0.091707346403082521, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.093786698953862213, 0.085144880026174929, -499.9771283495769, False, 0, Nothing, 0)
+Set myCenterLine = Part.InsertCenterLine2()
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.048658226228379446, 0.085265624398377204, -499.97713939341202, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.048242346430819399, 0.085431976317401223, -499.97709560113231, True, 0, Nothing, 0)
+Set myCenterLine = Part.InsertCenterLine2()
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.070616679539549906, 0.085847856114960958, -500.02007911586338, False, 0, Nothing, 0)
+Part.EditDelete
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan17")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan17", "DRAWINGVIEW", 0.095319939514616675, 0.10140176054719832, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan18")
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan18", "DIMENSION", 0.09848062597607303, 0.0682145527019066, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\Mises en Plans\1. finis\Bague maintient bas.PDF", 0, 0)
+Set Part = Nothing
+swApp.CloseDoc "Bague maintient bas - Feuille1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.004908738521234063, -0.01536052286970566, 2.1837737065888603, 0.0057995942912114629, 2.8499467360395583
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.044178646691106563, -0.34561176456837733, 2.1837737065888603, 0.0057995942912114629, 2.8499467360395583
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, -0.16128549013190943, 2.1837737065888603, 0.0057995942912114629, 2.8499467360395583
+boolstatus = Part.Extension.SelectByID2("", "FACE", 2.1363977234973017, 0.19487186447248206, 2.8237580782302039, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 2.1364792494977198, 0.19497950595184754, 2.823980979496143, False, 0, Nothing, 0)
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.009817477042468126, 0
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.039269908169872504, 0.17664601300161509
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.019634954084936252, 0.099843398653086779
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.009817477042468126, 0.053761830043969804
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter -0.024543692606170314, 0.13824470582735093
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.0076802614348528298
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutCenter 0, 0.084482875783381123
+Part.ClearSelection2 True
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0, 0.0076802614348528298, 2.1877619537251722, 0.0055671491257633932, 2.8220857213808239
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.034361169648638439, 0.12288418295764528, 2.1877619537251722, 0.0055671491257633932, 2.8220857213808239
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.046081568609116975, 2.1877619537251722, 0.0055671491257633932, 2.8220857213808239
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.004908738521234063, -0.01536052286970566, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.31415926535898003, -0.030721045739411319, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.1325359400733197, -0.01536052286970566, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.29452431127404377, -0.39169333317749433, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint 0.014726215563702188, -0.053761830043969804, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.29452431127404377, 0.16896575156676225, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.15707963267949002, 0.076802614348528295, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.009817477042468126, 0.01536052286970566, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+Set myModelView = Part.ActiveView
+myModelView.RotateAboutPoint -0.073631077818510943, 0.061442091478822639, 2.1255831747754161, 0.033995435899042192, 2.8398833558409149
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.90447046455021129, 0.015952439097790538, 2.8524962203937005, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "FACE", 0.90447046455021129, 0.015952439097790538, 2.8524962203937005, False, 0, Nothing, 0)
+Part.OpenCompFile
+Set Part = swApp.OpenDoc6("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Cloison.SLDPRT", 1, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Cloison.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Part.ClearSelection2 True
+Set Part = swApp.NewDocument("C:\ProgramData\SolidWorks\SolidWorks 2013\lang\french\sheetformat\a4 - iso.slddrt", 12, 0.29699999999999999, 0.20999999999999999)
+Part.SetPickMode
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0, 0, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.SetupSheet5("Feuille1", 12, 12, 1, 1, True, "C:\ProgramData\SolidWorks\SolidWorks 2013\lang\french\sheetformat\a4 - iso.slddrt", 0.20999999999999999, 0.29699999999999999, "Par défaut", False)
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Cloison.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Cloison - Feuille1", False, longstatus
+Set Part = swApp.ActiveDoc
+Set myView = Part.CreateDrawViewFromModelView3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Cloison.SLDPRT", "*Trimétrique", 0.17200651920838184, 0.085196472642607629, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+Set myView = Part.CreateDrawViewFromModelView3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Cloison.SLDPRT", "*Face", 0.079951619618559733, 0.21265213948224143, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.11794909081476893, 0.21315296225949432, 0.0014999999999645297, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.13025086507978026, 0.2182168168990668, 0)
+Part.ClearSelection2 True
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "'<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "''<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "''4<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "''4d<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "''4<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "''<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "'<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<D-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "D-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "dD-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "D-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "-DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "DIAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "IAM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "AM>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M>", "", True, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M><DIM", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M><DI", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M><D", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M><", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M>", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "M", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>", "", False, "", "", False)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "<MOD-DIAM>2", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "4<MOD-DIAM>2", "", False, "", "", False)
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "4x<MOD-DIAM>2", "", False, "", "", False)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.087469965527672583, 0.24162841153585016, 0.0014999999999645297, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.093870257586649311, 0.21585881456154907, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.096396688662561195, 0.24903927602519166, 0.0014999999999645297, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.088143680481249084, 0.22326967905089054, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.080059101038331096, 0.24971299097876812, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.079890672299936974, 0.17577277482374737, 0, True, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.079890672299936974, 0.17577277482374737, 0)
+boolstatus = Part.DeSelectByID("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.080059101038331096, 0.24971299097876812, 0)
+boolstatus = Part.Extension.SelectByID2("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.080059101038331096, 0.24971299097876812, 0, False, 0, Nothing, 0)
+boolstatus = Part.DeSelectByID("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.080059101038331096, 0.24971299097876812, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.080995343656152755, 0.25048868905195781, 0.0014999999999645297, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.080651801261995781, 0.17665596685454515, 0.0014999999999645297, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.033944319682885887, 0.21270255552860828, 0)
+Part.ClearSelection2 True
+Part.SetPickMode
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan12", "DIMENSION", 0.031606542555849756, 0.21285954260947521, 0, False, 0, Nothing, 0)
+Part.EditDelete
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Objet de détail218@Vue de mise en plan12", "CENTERMARKSYM", 0.11646580148730191, 0.21898470305498063, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.1002468244637906, 0.20717905311269688, 0)
+Part.ClearSelection2 True
+boolstatus = Part.EditDimensionProperties2(0, 0, 0, "", "", True, 9, 2, True, 12, 12, "R", "", True, "", "", False)
+Part.ClearSelection2 True
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan12", "DIMENSION", 0.10366715295174196, 0.20938571665331068, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan12", "DIMENSION", 0.095943830559593712, 0.21832270399279649, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("RD4@Vue de mise en plan12", "DIMENSION", 0.09638516326771647, 0.22494269461463784, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.12827145142958568, 0.24061000575299574, 0, False, 0, Nothing, 0)
+Set myView = Part.CreateDrawViewFromModelView3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\1 bis (last)-20170215T072705Z\1 bis (last)\Cloison.SLDPRT", "*Gauche", 0.16086722605303297, 0.21360370987792304, 0)
+Part.ClearSelection2 True
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0, 0, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.16141131514095097, 0.25381435198910529, 0, False, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.16117949403806453, 0.261696269487245, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.16027178948288279, 0.1734171263831773, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILHOUETTE", 0.16151245735680345, 0.2540513680443347, 0, True, 0, Nothing, 0)
+Set myDisplayDim = Part.AddDimension2(0.17836722605303298, 0.21281560308993364, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("RD2@Vue de mise en plan13", "DIMENSION", 0.17695630353120595, 0.21427650745778251, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.15232962990175336, 0.20342407501090509, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0.1031836948828308, 0.17221585225003264, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.16258970600329958, 0.16966988034486968, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.1600437340981366, 0.14463448994410069, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.15495179028781075, 0.129358658513123, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.16301403465416009, 0.14123986073721678, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("", "SILH_VERTEX", 0.16343836330502054, 0.14421016129324021, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.14985984647748485, 0.12681268660796008, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("", "EDGE", 0.16089239139985761, 0.14293717534065886, 0.02007328902845984, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.15749776219297368, 0.12681268660796008, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.16046806274899711, 0.12851000121140205, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.11973251226638992, 0.12766134390968104, 0, False, 0, Nothing, 0)
+boolstatus = Part.Extension.SketchBoxSelect("0.119733", "0.127661", "0.000000", "0.117611", "0.125115", "0.000000")
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.15916731233182918, 0.2214179340509401, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.17249595454008204, 0.22851221135533273, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.1497082759259723, 0.22227784645147253, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateSheet("Feuille1")
+boolstatus = Part.Extension.SelectByID2("Feuille1", "SHEET", 0.10757256829988263, 0.25925407967436759, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0.18013472837649183, 0.11032602300863398, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan12")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan12", "DRAWINGVIEW", 0.12262929046824553, 0.14509675290664342, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan13")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan13", "DRAWINGVIEW", 0.15606268460094688, 0.1424220813760273, 0, False, 0, Nothing, 0)
+boolstatus = Part.ActivateView("Vue de mise en plan11")
+boolstatus = Part.Extension.SelectByID2("Vue de mise en plan11", "DRAWINGVIEW", 0.16943604225402739, 0.13306073101887095, 0, False, 0, Nothing, 0)
+Part.ClearSelection2 True
+boolstatus = Part.ActivateSheet("Feuille1")
+Part.ViewZoomtofit2
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\Mises en Plans\1. finis\Bague écartement tiges.PDF", 0, 0)
+Part.ViewZoomtofit2
+Part.ViewZoomtofit2
+longstatus = Part.SaveAs3("W:\2. Iut année 2\S3\1. Projet tuteuré\Conception\Mises en Plans\1. finis\Bague écartement tiges.PDF.SLDDRW", 0, 2)
+Set Part = Nothing
+swApp.CloseDoc "Bague écartement tiges.PDF - Feuille1"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "Cloison.SLDPRT", False, longstatus
+Set Part = swApp.ActiveDoc
+Set Part = Nothing
+swApp.CloseDoc "Cloison.SLDPRT"
+Set Part = swApp.ActiveDoc
+Set myModelView = Part.ActiveView
+myModelView.FrameLeft = 0
+myModelView.FrameTop = 22
+Set myModelView = Part.ActiveView
+myModelView.FrameState = swWindowState_e.swWindowMaximized
+swApp.ActivateDoc2 "FUSEE 1BIS 2.SLDASM", False, longstatus
+Set Part = swApp.ActiveDoc
